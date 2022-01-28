@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // console.log(this);
+
+    // const person ={
+    //     name:'pablo',
+    //     test:function(){
+    //         console.log(this);
+    //     }
+    // }
+
+    // person.test();
+
+    // function NikeProduct(){
+    //     let nike={
+    //     name:"tshirt",
+    //     type:'classi',
+    //     price:3000,
+    // };
+
+    // return nike;
+    // }
+
+    // let p1=NikeProduct();
+    // console.log(p1);
+    //constructor function
+
+    // function NikeProduct(name,price,type){
+    //     this.name=name;
+    //     this.type=type;
+    //    this.price= price;
+    // }
+
+    // let nike= new NikeProduct('tshirt',2000,'classi');
+    // let nike2=new NikeProduct('shoose',5000,'sneakers')
+    // console.log(nike2);
+
+    function newsPaper(news,name){
+        this.date=new Date();
+        this.randomId=Math.floor(Math.random()*100)+1;
+        this.dayofthenews=news;
+        this.nameOfthepulisher=name;
+    
+        
+    }
+
+    let n1=new newsPaper("today is trump comming in india",'sudheer')
+    console.log(n1);
+</script>

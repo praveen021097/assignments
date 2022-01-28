@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+
+
+        }
+    </style>
+</head>
+<body>
+   <button id="object">Objects</button>
+   <button id="array">Arrays</button>
+   <button id="function">Functions</button>
+   <button id="string">Strings</button>
+   <button id="number">Numbers</button>
+   <button id="null">null</button>
+   <button id="undefined">undefined</button>
+
+   <div id="box">
+
+   </div>
+
+</body>
+</html>
+<script>
+    //object code
+    document.querySelector("#object").addEventListener("click",function(){
+        let h1=document.createElement("h1").textContent="Objects";
+        let br =document.createElement("br");
+        let ul=document.createElement("ul");
+
+        let li1=document.createElement("li");
+        li1.textContent="objects are mutable";
+
+        let li2=document.createElement("li");
+        li2.textContent="it is a non primitive datatype";
+
+        let li3=document.createElement("li");
+        li3.textContent="its create by two type first one is object litral and second one is by constructor function";
+
+        let li4=document.createElement("li");
+        li4.textContent="object hold the value in key value pair";
+
+        let li5=document.createElement("li");
+        li5.textContent="it also hold function inside";
+
+        let li6=document.createElement("li");
+        li6.textContent="it contain all datatype";
+
+        ul.append(li1,li2,li3,li4,li5,li6)
+
+        let box=document.querySelector("#box");
+        box.append(h1,br,ul);
+    })
+//array code
+    document.querySelector("#array").addEventListener("click",function(){
+      
+        let h1=document.createElement("h1").textContent="Array";
+        let br =document.createElement("br");
+        let ul=document.createElement("ul");
+
+        let li1=document.createElement("li");
+        li1.textContent="it is a non primitive datatype";
+
+        let li2=document.createElement("li");
+        li2.textContent="it is mutable";
+
+        let li3=document.createElement("li");
+        li3.textContent="its create by two type first one is object litral and second one is by constructor function";
+
+        let li4=document.createElement("li");
+        li4.textContent="object hold the value by index";
+
+        let li5=document.createElement("li");
+        li5.textContent="it also hold function inside";
+
+        let li6=document.createElement("li");
+        li6.textContent="it contain all datatype";
+
+        ul.append(li1,li2,li3,li4,li5,li6)
+
+        let box=document.querySelector("#box");
+        box.append(h1,br,ul);
+    })
+//function code
+    
+    document.querySelector("#function").addEventListener("click",function(){
+      
+      let h1=document.createElement("h1").textContent="Function";
+      let br =document.createElement("br");
+      let ul=document.createElement("ul");
+
+      let li1=document.createElement("li");
+      li1.textContent="it is a non primitive datatype";
+
+      let li2=document.createElement("li");
+      li2.textContent="it's save the lot of time";
+
+      let li3=document.createElement("li");
+      li3.textContent="it's create local scope";
+
+      let li4=document.createElement("li");
+      li4.textContent="it is more powerfull we can change or make things and can easy task by function";
+
+      let li5=document.createElement("li");
+      li5.textContent="it also hold function inside";
+
+      let li6=document.createElement("li");
+      li6.textContent="it contain all datatype";
+
+      ul.append(li1,li2,li3,li4,li5,li6)
+
+      let box=document.querySelector("#box");
+      box.append(h1,br,ul);
+  })
+//string code
+  document.querySelector("#string").addEventListener("click",function(){
+      
+      let h1=document.createElement("h1").textContent="Strings";
+      let br =document.createElement("br");
+      let ul=document.createElement("ul");
+
+      let li1=document.createElement("li");
+      li1.textContent="it is a  primitive datatype";
+
+      let li2=document.createElement("li");
+      li2.textContent="it is a collection of words and characters";
+
+      let li3=document.createElement("li");
+      li3.textContent="it is always inside in single and double quote and backtikcs";
+
+      let li4=document.createElement("li");
+      li4.textContent="it is immutable";
+
+      let li5=document.createElement("li");
+      li5.textContent="it have a length";
+
+      let li6=document.createElement("li");
+      li6.textContent="we can access by index value";
+
+      ul.append(li1,li2,li3,li4,li5,li6)
+
+      let box=document.querySelector("#box");
+      box.append(h1,br,ul);
+  })
+//number code
+  document.querySelector("#number").addEventListener("click",function(){
+      
+      let h1=document.createElement("h1").textContent="Numbers";
+      let br =document.createElement("br");
+      let ul=document.createElement("ul");
+
+      let li1=document.createElement("li");
+      li1.textContent="it is a  primitive datatype";
+
+      let li2=document.createElement("li");
+      li2.textContent="it is a numeric value ";
+
+      let li3=document.createElement("li");
+      li3.textContent="we perform mathmatical expression ";
+
+      let li4=document.createElement("li");
+      li4.textContent="it can be any form of number like as float and negative and positive";
+
+      let li5=document.createElement("li");
+      li5.textContent="it have a collection of inbuilt functionalities";
+
+      let li6=document.createElement("li");
+      li6.textContent="it is check by type of keyword ";
+
+      ul.append(li1,li2,li3,li4,li5,li6)
+
+      let box=document.querySelector("#box");
+      box.append(h1,br,ul);
+  })
+//null code
+  document.querySelector("#null").addEventListener("click",function(){
+      
+      let h1=document.createElement("h1").textContent="Null";
+      let br =document.createElement("br");
+      let ul=document.createElement("ul");
+
+      let li1=document.createElement("li");
+      li1.textContent="it is a  primitive datatype";
+
+      let li2=document.createElement("li");
+      li2.textContent="basically null is nothig but it is empty value ";
+
+      let li3=document.createElement("li");
+      li3.textContent="its denotes we are declared the things but not assin value ";
+
+      let li4=document.createElement("li");
+      li4.textContent="just like you have a container but that is empaty";
+
+      let li5=document.createElement("li");
+      li5.textContent="null always denotes the objects";
+
+      let li6=document.createElement("li");
+      li6.textContent="null is very usefull";
+
+      ul.append(li1,li2,li3,li4,li5,li6)
+
+      let box=document.querySelector("#box");
+      box.append(h1,br,ul);
+  })
+//undefined code
+  document.querySelector("#undefined").addEventListener("click",function(){
+      
+      let h1=document.createElement("h1").textContent="Undefined";
+      let br =document.createElement("br");
+      let ul=document.createElement("ul");
+
+      let li1=document.createElement("li");
+      li1.textContent="it is a  primitive datatype";
+
+      let li2=document.createElement("li");
+      li2.textContent="it always denotes that value not assigned to variable ";
+
+      let li3=document.createElement("li");
+      li3.textContent="if you declare the variable but not assign the value when datatype is undefined ";
+
+      let li4=document.createElement("li");
+      li4.textContent="its denotes conatainer not present";
+
+      let li5=document.createElement("li");
+      li5.textContent="it is immutable";
+
+      let li6=document.createElement("li");
+      li6.textContent="its denotes nothing is present";
+
+      ul.append(li1,li2,li3,li4,li5,li6)
+
+      let box=document.querySelector("#box");
+      box.append(h1,br,ul);
+  })
+
+</script>
