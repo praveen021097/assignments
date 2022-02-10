@@ -1,0 +1,25 @@
+button {
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    outline: 1;
+    color: white;
+    margin-left: 200px;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    font-size: 18px;
+} 
+#menulist {
+    width: 200px;
+    height: 300px;
+   
+    display: flex;
+}
+.number{
+    text-align: right;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

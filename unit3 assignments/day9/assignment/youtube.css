@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#searchResults{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(4,1fr);
+
+   grid-row-gap: 25px;
+   grid-column-gap: 20px;
+   padding: 10px;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 60px;
+
+}
+
+.hamburger{
+    width: 30px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#left{
+    display: flex;
+    width: 20%;
+  
+}
+
+.youtubeIcon{
+    width: 46%;
+    height: 62%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#left>p{
+    margin-left: 0px;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-size: 13px;
+
+}
+#mid{
+    display: flex;
+    width: 45%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-top: 12px;
+}
+#mid>input{
+    width: 90%;
+    font-size: 18px;
+    outline: 0;
+    border: none;
+}
+#right{
+    display: flex;
+    width: 22%;
+    
+}
+.searchIcon{
+    width: 30px;
+    height: 40px;
+    margin-left: 14px;
+    margin-top: -1px;
+}
+#mid>div{
+    
+    width: 57px;
+    background-color: #d9d9da;
+    border-left: 1px solid gray;
+    
+}
+#mike{
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    background-color:#d9d9da ;
+    margin-left: -35px;
+    margin-top: 10px;
+}
+.mikeIcon{
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.recordIcon{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.apps{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.bell{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px; 
+    margin-left: 25px;
+
+}
+.img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 25px;
+
+}

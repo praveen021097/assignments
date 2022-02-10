@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // let cat={
+    //     type:"cat",
+    //     tail:true,
+    //     legs:4,
+    //     mustache:true,
+    // }
+
+    // let tiger=Object.create(cat);
+    // console.log(tiger);
+    // tiger.speed=330;
+
+    // const fish = {
+    //     name:'nemo',
+    //     talk: true,
+    // }
+
+    // let monkey=Object.create(fish);
+
+    // let human=Object.create(monkey);
+    // human.name="pablo";
+    // console.log(human.name);
+
+    // let arr= new Array(1,2,3);
+    // console.log(arr);
+
+    let arr2= new myArray(1,2,3);
+
+    function myArray(){
+        Object.defineProperty(this,"length",{
+            writable:true,
+            enumerable:false
+        })
+
+        for(let i=0; i<arguments.length;i++){
+            this[i]=arguments[i];
+
+            this.length=arguments.length;
+        }
+    }
+    
+    myArray.prototype.posh=function(x){
+        let index=this.length
+        this[index]=x
+        this.length++
+    }
+
+    myArray.prototype.hatao = function(){
+        let index=this.length-1
+
+        delete this[index]
+
+        this.length--
+
+    }
+
+    console.log(Object.values(arr2));
+
+
+
+
+    
+</script>

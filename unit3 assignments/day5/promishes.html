@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let passexam=true;
+
+    let myPromish=new Promise(function(resolve,reject){
+        if(passexam==true){
+            resolve("i won the match i got watch choclate")
+        }
+        else{
+            reject("i got chappal")
+        }
+    })
+
+    myPromish.then(function(res){
+        console.log(res);
+    }).catch(function(e){
+        console.log("eroor :",e);
+    })
+</script>

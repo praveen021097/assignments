@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 10px;
+            margin: auto;
+        }
+        #container>div{
+            border: 1px solid black;
+            height: 250px;
+        }
+        #container>div>h1{
+            color: blue;
+        }
+        #container>div>h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+</body>
+</html>
+<script>
+    let studentData=JSON.parse(localStorage.getItem("studentData")) || [];
+    
+    display(studentData);
+
+    function display(studentData){
+        let count=0;
+        studentData.map(function(elem){
+            
+            let container=document.getElementById("container");
+            let div=document.createElement("div");
+            
+            let h1=document.createElement("h1");
+            h1.textContent=`Student ${count++}`
+
+            let name=document.createElement("h2");
+            name.textContent=`Name :${elem.name}`;
+
+            let number=document.createElement("h2");
+            number.textContent=`Contact No.: ${elem.number}`;
+
+            let city=document.createElement("h2");
+            city.textContent=`City :${elem.city}`;
+
+            div.append(h1,name,number,city);
+            container.append(div);
+
+            
+
+        })
+    }
+</script>

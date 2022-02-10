@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student data</h1>
+</body>
+</html>
+
+<script>
+    let stuArr=[];
+
+    function Student(name,number, city){
+        this.name=name;
+        this.number=number;
+        this.city=city;
+    }
+
+    let s1=new Student('ramesh',9898989,'kanpur');
+    stuArr.push(s1)
+    let s2=new Student('pablo',45454,'paglapur');
+    stuArr.push(s2);
+    let s3=new Student('kallu',67984394,'siliconvelley');
+    stuArr.push(s3);
+    let s4=new Student('sumesh',9864989,'kannauj');
+    stuArr.push(s4)
+    let s5=new Student('pradeep',45456564,'lalitpur');
+    stuArr.push(s5);
+    let s6=new Student('dragon',232394,'gujrat');
+    stuArr.push(s6);
+
+
+    console.log(stuArr);
+    localStorage.setItem("studentData",JSON.stringify(stuArr));
+</script>
+

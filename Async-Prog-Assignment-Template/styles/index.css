@@ -1,0 +1,41 @@
+#slideshow{
+    width: 100%;
+    height: 400px;
+
+}
+#slideshow>img{
+    width: 100%;
+    height: 100%;
+}
+
+#movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,150px);
+
+    grid-gap: 40px;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.moviesdata{
+    display: flex;
+    border: 1px solid black;
+}
+    
+.moviesdata>div:nth-child(1){
+    width: 50%;
+    height: 100%;
+
+}  
+.moviesdata>div:nth-child(2){
+    padding: 10px;
+
+} 
+    
+
+.moviesdata>div>img{
+    width: 100%;
+    height: 100%;
+}

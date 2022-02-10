@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let amar={
+        name:'Amar',
+        purpose:'singing',
+        city:'Goa',
+        skill(){
+            console.log(`${this.name} is ${this.purpose}`);
+        },
+    };
+
+    let anthony={
+        name:'Anthony',
+        city:'Kashmir',
+        purpose:'Magician',
+       
+    };
+
+    let akbar={
+        name:'Akbar',
+        city:'Mumbai',
+        purpose:'chef',
+        
+    };
+
+    amar.skill.call(anthony);
+   amar.skill.call(akbar)
+    
+    
+
+</script>
