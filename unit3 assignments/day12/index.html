@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            height: 300px;
+        }
+
+        #container {
+            display: flex;
+            height: 600px;
+
+        }
+
+        #input-section {
+            flex: 1;
+            margin: 5%;
+
+        }
+
+        #output-section {
+            flex: 1;
+            margin: 5%;
+        }
+
+        #input-text {
+            width: 99%;
+            height: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="input-section">
+            <h4>Input Section</h4>
+
+            <textarea id="input-text"></textarea>
+            <button id="translate-btn" onclick="translateText()">Translate</button>
+        </div>
+
+        <div id="output-section">
+            <h4>Output Section</h4>
+            <p id="translated-text">
+
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    async function translateText() {
+        try {
+            let input = document.getElementById("input-text").value;
+
+
+            let res = await fetch("https://libretranslate.de/translate", {
+                method: "post",
+                body:JSON.stringify({
+                    q:input,
+                    source:"en",
+                    target:"hi",
+                    format:"text",
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                     
+                },
+
+            });
+            let data = await res.json();
+            document.getElementById("translated-text").innerText=data.translatedText;
+            console.log("data", data);
+
+        }
+        catch (error) {
+            console.log("error :", error)
+        }
+    }
+
+   
+</script>

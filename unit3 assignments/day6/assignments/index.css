@@ -75,9 +75,10 @@ button{
     width: 350px;
 }
 #container>div{
-    display: none;
+  visibility: hidden;
 }
 #container>div:nth-child(1){
+    visibility: visible;
     display: block;
     height: 500px;
     margin-left: 50px;
@@ -95,6 +96,17 @@ button{
 
 }
 #container2{
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 25px;
+  padding: 10px;
+}
+#container2>div>img{
+    height: 70%;
+    width: 100%;
+
+}
+#container2>div>p{
+    color: white;
+    margin-left: 15px
 }

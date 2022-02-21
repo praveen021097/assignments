@@ -26,10 +26,11 @@ function printData(data){
     container.innerHTML="";
     container2.innerHTML="";
     data.Search.forEach(function(elem){
-        let imdb=Math.abs(Math.random()*5+4.5).toFixed(1);
-       console.log(elem)
+        let imdb=Math.abs(Math.random()*5+5).toFixed(1);
       
-        let div=document.createElement("div");
+      
+        if(imdb>8.5){
+            let div=document.createElement("div");
 
         let img=document.createElement("img");
         img.src=elem.Poster;
@@ -47,6 +48,7 @@ function printData(data){
 
         container.append(div);
         container2.append(div);
+        }
        
     
        
