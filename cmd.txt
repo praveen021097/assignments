@@ -1,0 +1,545 @@
+Microsoft Windows [Version 10.0.19041.450]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\PK>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a1ab5ae8-3ebb-4949-b172-f867f9a5f491") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T13:45:27.057+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+pk      0.000GB
+> use assignment
+switched to db assignment
+> db.user.find()
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+pk      0.000GB
+> show collection
+uncaught exception: Error: don't know how to show [collection] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> })^Cser.insert({name:"ravi"} {first})  })
+bye
+
+C:\Users\PK>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("8e135705-743b-4117-bcdf-4849ce86f6ca") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T13:45:27.057+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+pk      0.000GB
+> use assignment
+switched to db assignment
+> db.user.insert([{first_name:"ravi"} {last_name:"kumar"} {email:"ravi123@gmail.cdb.user.insert([{first_name:"ravi"} {last_name:"kumar"} {email:"ravi123@gmail.com"} { gender:"Male"} {ip_adress:127.34.78,250} {age:22}] )dbl:"ravi123@gmail
+uncaught exception: SyntaxError: missing ] after element list :l:"ravi123@gmail
+@(shell):1:36er:"Male"} {ip_adress:127.34.78,250} {age:22}] )dil:"ravi123@gmail
+> om"} { gender:"Male"} {ip_adress:127.34.78,250} {age:22}] )
+> db.dropDatabase()
+{ "ok" : 1 }
+>
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+pk      0.000GB
+> use assignment
+switched to db assignment
+> db.createCollection("user")
+{ "ok" : 1 }
+> db.user.insert({"first_name":"praveen","last_name":"kumar","email":"praveen7523017052@gmail.com","gender":"male","age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278a9a955517f81122924f"),
+        "first_name" : "praveen",
+        "last_name" : "kumar",
+        "email" : "praveen7523017052@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+> db.user.insert({"first_name":"sumit","last_name":"narwal","email":"sumit2@gmail.com","gender":"male","age":25})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"gangu","last_name":"bai","email":"gangubai2@gmail.com","gender":"female","age":20})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"suman","last_name":"kharwal","email":"suman3017052@gmail.com","gender":"female","age":27})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"rajat","last_name":"Kumavat","email":"rajat@gmail.com","gender":"male","age":18})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"saleem","last_name":"khan","email":"saleem52@gmail.com","gender":"female","age":26})
+WriteResult({ "nInserted" : 1 })
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278a9a955517f81122924f"),
+        "first_name" : "praveen",
+        "last_name" : "kumar",
+        "email" : "praveen7523017052@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62278b6b955517f811229250"),
+        "first_name" : "sumit",
+        "last_name" : "narwal",
+        "email" : "sumit2@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62278c1d955517f811229251"),
+        "first_name" : "gangu",
+        "last_name" : "bai",
+        "email" : "gangubai2@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278cbc955517f811229252"),
+        "first_name" : "suman",
+        "last_name" : "kharwal",
+        "email" : "suman3017052@gmail.com",
+        "gender" : "female",
+        "age" : 27
+}
+{
+        "_id" : ObjectId("62278d52955517f811229253"),
+        "first_name" : "rajat",
+        "last_name" : "Kumavat",
+        "email" : "rajat@gmail.com",
+        "gender" : "male",
+        "age" : 18
+}
+{
+        "_id" : ObjectId("62278d8c955517f811229254"),
+        "first_name" : "saleem",
+        "last_name" : "khan",
+        "email" : "saleem52@gmail.com",
+        "gender" : "female",
+        "age" : 26
+}
+> db.user.insert({"first_name":"sujata","last_name":"kumari","email":"sujat2@gmail.com","gender":"female","age":23})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"ram","last_name":"sharma","email":"ram@gmail.com","gender":"male","age":21})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"sonu","last_name":"singh","email":"sonu@gmail.com","gender":"male","age":20})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"first_name":"ujjwal","last_name":"singh","email":"ujjwal@gmail.com","gender":"male","age":20})
+WriteResult({ "nInserted" : 1 })
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278a9a955517f81122924f"),
+        "first_name" : "praveen",
+        "last_name" : "kumar",
+        "email" : "praveen7523017052@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62278b6b955517f811229250"),
+        "first_name" : "sumit",
+        "last_name" : "narwal",
+        "email" : "sumit2@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62278c1d955517f811229251"),
+        "first_name" : "gangu",
+        "last_name" : "bai",
+        "email" : "gangubai2@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278cbc955517f811229252"),
+        "first_name" : "suman",
+        "last_name" : "kharwal",
+        "email" : "suman3017052@gmail.com",
+        "gender" : "female",
+        "age" : 27
+}
+{
+        "_id" : ObjectId("62278d52955517f811229253"),
+        "first_name" : "rajat",
+        "last_name" : "Kumavat",
+        "email" : "rajat@gmail.com",
+        "gender" : "male",
+        "age" : 18
+}
+{
+        "_id" : ObjectId("62278d8c955517f811229254"),
+        "first_name" : "saleem",
+        "last_name" : "khan",
+        "email" : "saleem52@gmail.com",
+        "gender" : "female",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62278e06955517f811229255"),
+        "first_name" : "sujata",
+        "last_name" : "kumari",
+        "email" : "sujat2@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62278e31955517f811229256"),
+        "first_name" : "ram",
+        "last_name" : "sharma",
+        "email" : "ram@gmail.com",
+        "gender" : "male",
+        "age" : 21
+}
+{
+        "_id" : ObjectId("62278e93955517f811229257"),
+        "first_name" : "sonu",
+        "last_name" : "singh",
+        "email" : "sonu@gmail.com",
+        "gender" : "male",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278ec5955517f811229258"),
+        "first_name" : "ujjwal",
+        "last_name" : "singh",
+        "email" : "ujjwal@gmail.com",
+        "gender" : "male",
+        "age" : 20
+}
+> db.user.find({}).count()
+10
+> db.updateMany({$gte:{"age":10},{$set:{"ip_adresss":172.44.67.256}}})
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:31
+> db.user.updateMany({$gte:{"age":10},{$set:{"ip_adresss":172.44.67.256}}})
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:36
+> db.user.update({"first_name":"praveen"},{$set:{"ip_address":127.65.250.256}})
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:66
+> db.user.update({"first_name":"praveen"},{$set:{"ip_address":127.65.250.256}})
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:66
+> db.user.update({"first_name":"praveen"},{$set:{"ip_address":127.65.250.256}}})
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:66
+> db.user.update({"first_name":"praveen"},{$set: {"ip_address":"127.65.250.256"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.user.update({"first_name":"suman"},{$set: {"ip_address":"167.75.250.256"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.user.update({"first_name":"suman"},{$set: {"ip_address":"170.75.256.256"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.user.update({"first_name":"sonu"},{$set: {"ip_address":"170.75.156.206"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278a9a955517f81122924f"),
+        "first_name" : "praveen",
+        "last_name" : "kumar",
+        "email" : "praveen7523017052@gmail.com",
+        "gender" : "male",
+        "age" : 24,
+        "ip_address" : "127.65.250.256"
+}
+{
+        "_id" : ObjectId("62278b6b955517f811229250"),
+        "first_name" : "sumit",
+        "last_name" : "narwal",
+        "email" : "sumit2@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62278c1d955517f811229251"),
+        "first_name" : "gangu",
+        "last_name" : "bai",
+        "email" : "gangubai2@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278cbc955517f811229252"),
+        "first_name" : "suman",
+        "last_name" : "kharwal",
+        "email" : "suman3017052@gmail.com",
+        "gender" : "female",
+        "age" : 27,
+        "ip_address" : "170.75.256.256"
+}
+{
+        "_id" : ObjectId("62278d52955517f811229253"),
+        "first_name" : "rajat",
+        "last_name" : "Kumavat",
+        "email" : "rajat@gmail.com",
+        "gender" : "male",
+        "age" : 18
+}
+{
+        "_id" : ObjectId("62278d8c955517f811229254"),
+        "first_name" : "saleem",
+        "last_name" : "khan",
+        "email" : "saleem52@gmail.com",
+        "gender" : "female",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62278e06955517f811229255"),
+        "first_name" : "sujata",
+        "last_name" : "kumari",
+        "email" : "sujat2@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62278e31955517f811229256"),
+        "first_name" : "ram",
+        "last_name" : "sharma",
+        "email" : "ram@gmail.com",
+        "gender" : "male",
+        "age" : 21
+}
+{
+        "_id" : ObjectId("62278e93955517f811229257"),
+        "first_name" : "sonu",
+        "last_name" : "singh",
+        "email" : "sonu@gmail.com",
+        "gender" : "male",
+        "age" : 20,
+        "ip_address" : "170.75.156.206"
+}
+{
+        "_id" : ObjectId("62278ec5955517f811229258"),
+        "first_name" : "ujjwal",
+        "last_name" : "singh",
+        "email" : "ujjwal@gmail.com",
+        "gender" : "male",
+        "age" : 20
+}
+> c:/output.text
+uncaught exception: SyntaxError: unterminated regular expression literal :
+@(shell):1:2
+> db.user.remove({"first_name":"praveen"})
+WriteResult({ "nRemoved" : 1 })
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278b6b955517f811229250"),
+        "first_name" : "sumit",
+        "last_name" : "narwal",
+        "email" : "sumit2@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62278c1d955517f811229251"),
+        "first_name" : "gangu",
+        "last_name" : "bai",
+        "email" : "gangubai2@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278cbc955517f811229252"),
+        "first_name" : "suman",
+        "last_name" : "kharwal",
+        "email" : "suman3017052@gmail.com",
+        "gender" : "female",
+        "age" : 27,
+        "ip_address" : "170.75.256.256"
+}
+{
+        "_id" : ObjectId("62278d52955517f811229253"),
+        "first_name" : "rajat",
+        "last_name" : "Kumavat",
+        "email" : "rajat@gmail.com",
+        "gender" : "male",
+        "age" : 18
+}
+{
+        "_id" : ObjectId("62278d8c955517f811229254"),
+        "first_name" : "saleem",
+        "last_name" : "khan",
+        "email" : "saleem52@gmail.com",
+        "gender" : "female",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62278e06955517f811229255"),
+        "first_name" : "sujata",
+        "last_name" : "kumari",
+        "email" : "sujat2@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62278e31955517f811229256"),
+        "first_name" : "ram",
+        "last_name" : "sharma",
+        "email" : "ram@gmail.com",
+        "gender" : "male",
+        "age" : 21
+}
+{
+        "_id" : ObjectId("62278e93955517f811229257"),
+        "first_name" : "sonu",
+        "last_name" : "singh",
+        "email" : "sonu@gmail.com",
+        "gender" : "male",
+        "age" : 20,
+        "ip_address" : "170.75.156.206"
+}
+{
+        "_id" : ObjectId("62278ec5955517f811229258"),
+        "first_name" : "ujjwal",
+        "last_name" : "singh",
+        "email" : "ujjwal@gmail.com",
+        "gender" : "male",
+        "age" : 20
+}
+> db.user.find({}).count()
+9
+> db.user.removeAll()
+uncaught exception: TypeError: db.user.removeAll is not a function :
+@(shell):1:1
+> db.user.removeAll({})
+uncaught exception: TypeError: db.user.removeAll is not a function :
+@(shell):1:1
+> db.user.remove()
+uncaught exception: Error: remove needs a query :
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:364:15
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+> db.user.find({}).pretty()
+{
+        "_id" : ObjectId("62278b6b955517f811229250"),
+        "first_name" : "sumit",
+        "last_name" : "narwal",
+        "email" : "sumit2@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62278c1d955517f811229251"),
+        "first_name" : "gangu",
+        "last_name" : "bai",
+        "email" : "gangubai2@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62278cbc955517f811229252"),
+        "first_name" : "suman",
+        "last_name" : "kharwal",
+        "email" : "suman3017052@gmail.com",
+        "gender" : "female",
+        "age" : 27,
+        "ip_address" : "170.75.256.256"
+}
+{
+        "_id" : ObjectId("62278d52955517f811229253"),
+        "first_name" : "rajat",
+        "last_name" : "Kumavat",
+        "email" : "rajat@gmail.com",
+        "gender" : "male",
+        "age" : 18
+}
+{
+        "_id" : ObjectId("62278d8c955517f811229254"),
+        "first_name" : "saleem",
+        "last_name" : "khan",
+        "email" : "saleem52@gmail.com",
+        "gender" : "female",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62278e06955517f811229255"),
+        "first_name" : "sujata",
+        "last_name" : "kumari",
+        "email" : "sujat2@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62278e31955517f811229256"),
+        "first_name" : "ram",
+        "last_name" : "sharma",
+        "email" : "ram@gmail.com",
+        "gender" : "male",
+        "age" : 21
+}
+{
+        "_id" : ObjectId("62278e93955517f811229257"),
+        "first_name" : "sonu",
+        "last_name" : "singh",
+        "email" : "sonu@gmail.com",
+        "gender" : "male",
+        "age" : 20,
+        "ip_address" : "170.75.156.206"
+}
+{
+        "_id" : ObjectId("62278ec5955517f811229258"),
+        "first_name" : "ujjwal",
+        "last_name" : "singh",
+        "email" : "ujjwal@gmail.com",
+        "gender" : "male",
+        "age" : 20
+}
+> db.user.remove({$gte:{"age":10}})
+WriteResult({
+        "nRemoved" : 0,
+        "writeError" : {
+                "code" : 2,
+                "errmsg" : "unknown top level operator: $gte. If you have a field name that starts with a '$' symbol, consider using $getField or $setField."
+        }
+})
